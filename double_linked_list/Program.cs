@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace double_linked_list
@@ -18,6 +19,7 @@ namespace double_linked_list
         //point to the precceeding node
         public Node prev;
     }
+        }
     internal class Program
     {
         static void Main(string[] args)
