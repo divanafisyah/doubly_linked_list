@@ -88,8 +88,7 @@ namespace double_linked_list
                 rollNo != current.noMhs; previous = current,
                 current = current.next) { }
             return (current != null);
-        }
-        public bool dellNode(int rollNo)
+        }        public bool dellNode(int rollNo)
         {
             Node previous, current;
             previous = current = null;
@@ -113,6 +112,13 @@ namespace double_linked_list
             previous.next = current.next;
             current.next.prev = previous;
             return true;
+        }
+        public bool listEmpty()
+        {
+            if (START == null)
+                return true;
+            else
+                return false;
         }
     }
 }
