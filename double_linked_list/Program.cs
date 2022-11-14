@@ -88,8 +88,7 @@ namespace double_linked_list
                 rollNo != current.noMhs; previous = current,
                 current = current.next) { }
             return (current != null);
-        }
-        public bool dellNode(int rollNo)
+        }        public bool dellNode(int rollNo)
         {
             Node previous, current;
             previous = current = null;
@@ -135,6 +134,23 @@ namespace double_linked_list
             {
                 Console.Write(currentNode.noMhs + "" + currentNode.name + "\n");
                 currentNode = currentNode.prev;
+            }
+        }
+        public void descending()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the Descending order of" + "roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode = currentNode.next)
+                { }
+                while(currentNode != null)
+                {
+                    Console.Write(currentNode.noMhs + "" +currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
             }
         }
     }
